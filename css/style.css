@@ -17,21 +17,16 @@
 	flex-wrap: wrap;
 }
 
-.row-reverse {
-	display: flex;
-	flex-wrap: wrap;
+.reverse {
 	flex-direction: row-reverse;
 }
 
-.row-space-between{
-	display: flex;
-	flex-wrap: wrap;
+.space-between{
 	justify-content: space-between;
 	align-items: center;
 }
 
-.row-no-wrap{
-	display: flex;
+.no-wrap{
 	flex-wrap: nowrap;
 }
 
@@ -82,17 +77,17 @@
 	padding: 10px;
 }
 
-.debug .row-reverse {
+.debug .reverse {
 	border: 2px solid orange;
 	padding: 10px;
 }
 
-.debug .row-space-between {
+.debug .space-between {
 	border: 2px solid orange;
 	padding: 10px;
 }
 
-.debug .row-no-wrap {
+.debug .no-wrap {
 	border: 2px solid orange;
 	padding: 10px;
 }
