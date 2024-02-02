@@ -5,18 +5,75 @@
 	margin: 0;
 }
 
+img{
+	max-width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: currentColor;
+}
+
+menu,
+ul,
+ol{
+	list-style: none;
+}
 
 /* LAYOUT */
 .container {
-	max-width: 800px;
+	max-width: 900px;
 	margin: 0 auto;
 }
+
+.nav .row{
+	justify-content: space-between;	
+}
+
+.nav .main-menu{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+}
+
+.container-small{
+	max-width: 700px;
+	margin: 0 auto;
+}
+
 
 .row {
 	display: flex;
 	flex-wrap: wrap;
 }
 
+.col-50{
+	width: 50%;
+}
+
+.col-33{
+	width: calc(100% / 3);
+}
+
+.col-66{
+	width: calc(2 * 200% / 6);	
+}
+
+.col-20{
+	width: calc(100% / 4);
+}
+
+.col-33{
+	width: calc(100% / 3);
+}
+
+.col-1-6{
+	width: calc(100% / 6);
+}
+
+
+/* UTILITIES */
 .reverse {
 	flex-direction: row-reverse;
 }
@@ -30,33 +87,7 @@
 	flex-wrap: nowrap;
 }
 
-.col-25{
-	width: 25%;
-}
 
-.col-50{
-	width: 50%;
-}
-
-.col-30{
-	width: 30%;
-}
-
-.col-70{
-	width: 70%;	
-}
-
-.col-20{
-	width: calc(100% / 4);
-}
-
-.col-33{
-	width: calc(100% / 3);
-}
-
-.col10{
-	width: 10%;
-}
 
 
 
@@ -68,6 +99,11 @@
 
 /* DEBUG */
 .debug .container {
+	border: 2px solid black;
+	padding: 10px;
+}
+
+.debug .container-small{
 	border: 2px solid black;
 	padding: 10px;
 }
@@ -95,5 +131,5 @@
 .debug [class^='col'] {
 	border: 2px solid red;
 	padding: 10px;
-	min-height: 100px;
+	min-height: 80px;
 }
